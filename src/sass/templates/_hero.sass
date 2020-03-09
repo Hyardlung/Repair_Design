@@ -16,19 +16,26 @@
     background-color: rgba($dark, 0.7)
   &__content
     position: relative
-    max-width: 47.857rem
+    max-width: 36rem
     margin-left: 4.285rem
   &__text
-    max-width: 504px
-    font-size: 1.571rem
+    max-width: 90%
+    margin: 0
+    margin-bottom: 2.65rem
+    font-size: 1.37rem
+    line-height: 1.9rem
   &__button
-    margin-right: 20px  
+    margin-right: 16px  
+    padding: 18px 25px 18px 26px
   &__instagram
     position: absolute
     left: 0
     top: 0
     max-width: 82px
     height: 100%
+  &__title
+    margin: 0
+    margin-bottom: 1rem
   &__scroll-down
     display: flex
     justify-content: center
@@ -36,9 +43,10 @@
     position: absolute
     left: 0
     bottom: 0
-    min-width: 17.642rem
-    min-height: 6.928rem
+    min-width: 15.5rem
+    min-height: 6.528rem
     background-color: $dark
+    font-size: 0.727rem
     font-family: 'Yeseva One', cursive
     text-transform: uppercase
     text-decoration: none
@@ -47,10 +55,13 @@
       content: ''
       width: 29px
       height: 29px
-      margin-left: 12px
+      margin-left: 19px
       border: 2px solid $primary
       border-radius: 50%
       background: url('../icons/arrow_down.svg') center no-repeat
+.button
+  &_outline
+    padding: 18px 42px
 .instagram
   display: flex
   justify-content: center
@@ -60,6 +71,8 @@
   &__link
     display: flex
     align-items: center
+    margin-top: 197px
+    font-size: 0.86rem
     color: $primary
     text-transform: uppercase
     text-decoration: none
@@ -68,12 +81,13 @@
       content: ''
       width: 50px
       height: 1px
-      margin-left: 8px
+      margin-left: 16px
       background-color: $primary
+  
 .title
-  margin: 0
+  font-size: 2.437rem
+  line-height: 1.38
   font-family: 'Yeseva One', cursive
   text-transform: uppercase
-  font-size: 2.857rem
   &_primary
     color: $primary
