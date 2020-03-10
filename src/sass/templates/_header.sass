@@ -12,6 +12,7 @@
   display: flex
   justify-content: space-between
   align-items: center
+  flex-wrap: nowrap
   &__nav
     margin-left: 1rem
 .logo
@@ -20,7 +21,8 @@
   color: $primary
   text-transform: uppercase
   font-family: 'Futura Demi'
-.nav
+.nav 
+  display: flex
   &__item
     margin-right: 2.4rem
     font-size: 0.85rem
@@ -34,6 +36,9 @@
   font-size: 0.87rem
   font-family: 'Futura Demi'
   color: $primary
+  white-space: nowrap
 .contacts
+  display: flex
+  align-items: center
   &__phone
     margin-right: 45px
