@@ -14,7 +14,22 @@
     &__content
       margin-left: 0px
 
+@media screen and ( max-width: 660px )
+  .row
+    flex-direction: column
+    align-items: center
+  .types
+    &__card
+      margin-bottom: 4.214rem
+  .card
+    &__text
+      margin-left: 0
+
 @media screen and ( max-width: 576px )
+  .section
+    &-title
+      &__heading
+        font-size: 1.8rem
   .logo
     padding: 1.82rem 0
     font-size: 1rem
@@ -48,6 +63,24 @@
   .button
     &_outline
       padding: 1.428rem 8.8rem
+  .col
+    margin-top: 1.3rem
+    .types
+      &__card
+        margin-bottom: 5.714rem
+  .card
+    &__text
+      max-width: 22.471rem
+      padding-left: 2.5rem
+      margin: -11.671rem auto 0 0
+    &__title
+      font-size: 1.22rem
+      line-height: 2.17rem
+    &__list
+      line-height: 1.85rem
+    &__pricetag
+      padding: 1rem 3rem
+      font-size: 1.215rem
 
 @media screen and ( max-width: 374px )
   .hero
