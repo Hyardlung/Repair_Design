@@ -31,18 +31,36 @@ document.addEventListener("DOMContentLoaded", function(event) {
 });
 
 
+// $(document).ready(function () {
+//   let modal = $(".modal"),
+//     modalBtn = $("[data-toggle=modal]"),
+//     closeBtn = $(".modal__close");
 
-/*
+//   modalBtn.on("click", function () {
+//     modal.toggleClass("modal_visible");
+//   });
+//   closeBtn.on("click", function () {
+//     modal.toggleClass("modal_visible");
+//   });
+// });
+
+
 $(document).ready(function () {
-  let modal = $('.modal'),
-      modalBtn = $('[data-toggle=modal]'),
-      closeBtn = $('.modal__close');
-  
-  modalBtn.on('click', function () {
-    modal.toggleClass('modal_visible');
+  $(window).scroll(function () {
+    
+    if ($(this).scrollTop() > 500) {
+      $("#button-up").fadeIn();
+    } else {
+      $("#button-up").fadeOut();
+    }
   });
-  closeBtn.on('click', function () {
-    modal.toggleClass('modal_visible');
+
+  $("#button-up").click(function () {
+    $("body,html").animate({
+        scrollTop: 0
+      },
+      500
+    );
+    return false;
   });
 });
-*/
