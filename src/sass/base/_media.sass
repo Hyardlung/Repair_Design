@@ -18,7 +18,8 @@
   .row
     flex-direction: column
     align-items: center
-  .types
+  .types,
+  .design-project
     &__card
       margin-bottom: 4.214rem
   .card
@@ -30,6 +31,10 @@
     &-title
       &__heading
         font-size: 1.8rem
+      &__subheading
+        max-width: 91%
+        font-size: 1.25rem
+        line-height: 1.65rem
   .logo
     padding: 1.82rem 0
     font-size: 1rem
@@ -65,7 +70,8 @@
       padding: 1.428rem 8.8rem
   .col
     margin-top: 1.3rem
-    .types
+    .types,
+    .design-project
       &__card
         margin-bottom: 5.714rem
   .card
@@ -81,6 +87,18 @@
     &__pricetag
       padding: 1rem 3rem
       font-size: 1.215rem
+  .design-project
+    &__section-title
+      margin-bottom: 1.8rem
+    .card__text
+      margin: -12rem auto 0 0
+    .card__list
+      line-height: 1.92rem
+    .card__item
+      &:nth-child(8)
+        display: none
+    .card__pricetag_wide
+      padding: 1rem 4rem
 
 @media screen and ( max-width: 374px )
   .hero
