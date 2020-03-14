@@ -14,6 +14,16 @@
     width: 100%
     height: 100%
     background-color: rgba($dark, 0.7)
+  &::after
+    content: ''
+    position: absolute
+    bottom: 0
+    left: 0
+    right: 0
+    width: 100%
+    height: 3.264rem
+    background-color: $dark
+
   &__content
     position: relative
     max-width: 36rem
@@ -42,7 +52,7 @@
     align-items: center
     position: absolute
     left: 0
-    bottom: -40px
+    bottom: 0
     min-width: 15.5rem
     min-height: 6.528rem
     background-color: $dark
@@ -51,6 +61,7 @@
     text-transform: uppercase
     text-decoration: none
     color: $light
+    z-index: 3
     &::after
       content: ''
       width: 29px

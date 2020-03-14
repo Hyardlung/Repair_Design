@@ -1,5 +1,5 @@
+$(document).ready(function () {
 
-document.addEventListener("DOMContentLoaded", function(event) {
   const modal = document.querySelector('.modal');
   const modalDialog = document.querySelector('.modal__dialog');
   const modalBtn = document.querySelectorAll('[data-toggle=modal]');
@@ -28,24 +28,7 @@ document.addEventListener("DOMContentLoaded", function(event) {
       closeModalEsc();
     }
   });
-});
 
-
-// $(document).ready(function () {
-//   let modal = $(".modal"),
-//     modalBtn = $("[data-toggle=modal]"),
-//     closeBtn = $(".modal__close");
-
-//   modalBtn.on("click", function () {
-//     modal.toggleClass("modal_visible");
-//   });
-//   closeBtn.on("click", function () {
-//     modal.toggleClass("modal_visible");
-//   });
-// });
-
-
-$(document).ready(function () {
   $(window).scroll(function () {
     
     if ($(this).scrollTop() > 500) {
@@ -63,4 +46,9 @@ $(document).ready(function () {
     );
     return false;
   });
+
+  let mySwiper = new Swiper ('.swiper-container', {
+    loop: true
+  });
+
 });

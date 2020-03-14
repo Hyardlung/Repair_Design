@@ -8,18 +8,46 @@ body
 img
   max-width: 100%
 .section
+  &_dark
+    background-color: $dark
+    color: $light
   &-title
     text-align: center
     text-transform: uppercase
     font-family: 'Yeseva One', cursive
+    &__img
+      margin-bottom: 1.6rem
+    &_left
+      text-align: left
     &__heading
+      line-height: 138.6%
       font-size: 1.2rem
+      &_primary
+        margin-bottom: 1.6rem
+        color: $primary
+        line-height: 151%
+        font-size: 1.5rem
     &__subheading
       max-width: 47rem
       margin: 0 auto
       font-family: 'Futura Book', sans-serif
       text-transform: none
       font-size: 1.25rem
+    &__word
+      display: flex
+      align-items: center
+      &::after
+        content: ''
+        width: 91px
+        height: 1px
+        margin-left: 33px
+        background-color: $primary
+    &__text
+      width: 30rem
+      font-size: 1.125rem
+      line-height: 1.76rem
+      font-family: 'Futura Book', sans-serif
+      text-transform: none
     &__img
       display: flex
       justify-content: center
