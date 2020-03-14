@@ -48,7 +48,22 @@ $(document).ready(function () {
   });
 
   let mySwiper = new Swiper ('.swiper-container', {
-    loop: true
-  });
+    loop: true,
+    pagination: {
+      el: '.swiper-pagination',
+      type: 'bullets',
+    },
+    navigation: {
+      nextEl: '.swiper-button-next',
+      prevEl: '.swiper-button-prev',
+    },
+  })
 
+  let next = $('.swiper-button-next');
+  let prev = $('.swiper-button-prev');
+  let bullets = $('.swiper-pagination');
+  let bullet = $('.swiper-pagination-bullet');
+
+  next.css('left', prev.width() + 20 + bullets.width() + 16)
+  bullets.css('left', prev.width() + 16)
 });
