@@ -66,4 +66,5 @@ $(document).ready(function () {
 
   next.css('left', prev.width() + 20 + bullets.width() + 16)
   bullets.css('left', prev.width() + 16)
+
 });
