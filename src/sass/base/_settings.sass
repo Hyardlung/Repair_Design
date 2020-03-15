@@ -5,12 +5,12 @@
 body
   font-family: 'Futura Book', sans-serif
   font-size: 1rem
+  color: $light
+  background: $dark url('../img/projects/lines_bg.png') center / cover no-repeat
+  background-attachment: fixed
 img
   max-width: 100%
 .section
-  &_dark
-    background-color: $dark
-    color: $light
   &-title
     text-align: center
     text-transform: uppercase
@@ -27,12 +27,16 @@ img
         color: $primary
         line-height: 151%
         font-size: 1.5rem
+      &_dark
+        color: $dark
     &__subheading
       max-width: 47rem
       margin: 0 auto
       font-family: 'Futura Book', sans-serif
       text-transform: none
       font-size: 1.25rem
+      &_dark
+        color: $dark
     &__word
       display: flex
       align-items: center
