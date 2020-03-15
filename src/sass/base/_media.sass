@@ -22,15 +22,55 @@
   .design-project
     &__card
       margin-bottom: 4.214rem
+  .col-50
+    width: 90%
   .card
     &__text
       margin-left: 0
+  .projects
+    padding: 3rem 0
+    .section-title
+      &__heading
+        &_primary
+          margin-bottom: 2rem
+          font-size: 1.62rem
+          line-height: 160%
+      &__word
+        &::after
+          display: none
+      &__left
+        display: flex
+      &__text
+        width: 95%
+        margin-bottom: 2rem
+        font-size: 1.165rem
+        line-height: 1.85rem
+  .swiper
+    &-slide
+      &__text
+        padding-bottom: 1.3rem
+        margin-bottom: 0
+        &:last-child
+          margin-bottom: 3rem
+      &__heading
+        font-size: 1.1rem
+      &__value
+        width: 100px
+        font-size: 1.2rem
+        line-height: 1.5rem
+      img
+        margin-top: 2.7rem
+  #button-up
+    opacity: 0
+    visibility: hidden
 
 @media screen and ( max-width: 576px )
   .section
     &-title
       &__heading
         font-size: 1.8rem
+        &_primary
+          margin-top: 0
       &__subheading
         max-width: 91%
         font-size: 1.25rem
@@ -96,6 +136,7 @@
       line-height: 1.92rem
     .card__pricetag_wide
       padding: 1rem 4rem
+
 
 @media screen and ( max-width: 374px )
   .hero

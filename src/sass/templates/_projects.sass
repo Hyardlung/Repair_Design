@@ -1,10 +1,13 @@
 .projects
-  padding: 6.268rem 0 
+  padding: 6.268rem 0
+  background: $dark url('../img/projects/lines_bg.png') center / cover no-repeat
 .swiper
   &-slide
     display: flex
     flex-wrap: wrap
     &__text
+      display: flex
+      flex-direction: column
       flex-basis: 50%
       margin-bottom: 2.42em
       padding-bottom: 2rem
@@ -15,6 +18,7 @@
       font-family: 'Yeseva One', cursive
       color: $primary
       text-transform: uppercase
+    
   &-pagination
     &-bullet
       width: 10px
