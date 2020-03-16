@@ -57,15 +57,15 @@
   visibility: visible
   display: flex
   align-items: center
-  left: 0
-  margin: 0
+  right: 0
+  margin-left: 0
   position: fixed
   bottom: 25px
-  max-width: 10rem
-  max-height: 6.528rem
+  max-width: 9rem
+  max-height: 4.528rem
   width: 100%
   height: 100%
-  padding-left: 1.5rem
+  padding-left: 0.5rem
   font-size: 0.727rem
   line-height: 6.5rem
   font-family: 'Yeseva One', cursive
@@ -74,12 +74,15 @@
   color: $light
   background-color: rgba($dark, 0.9)
   transition: opacity 0.3s
-  &::after
+  cursor: pointer
+  z-index: 999
+  &::before
     content: ''
     display: inline-block
     width: 29px
     height: 29px
     margin-left: 19px
+    margin-right: 15px
     border: 2px solid $primary
     border-radius: 50%
     background: url(../icons/arrow_up.svg) no-repeat 7px 9px

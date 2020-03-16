@@ -1,0 +1,24 @@
+.control
+  background-color: $light
+  &__section-title
+    margin-bottom: 2.214rem
+  &__video
+    position: relative
+    display: flex
+    margin: auto
+    max-width: 58.357rem
+    max-height: 31rem
+    width: 100%
+    height: 100%
+    background: $dark url('../img/control/video_mask.jpg') center no-repeat
+    box-shadow: 0px 20px 50px rgba(0, 0, 0, 0.15)
+    &::before
+      content: ''
+      position: absolute
+      width: 100%
+      height: 100%
+      background-color: rgba(black, 0.8)
+.video
+  &__play
+    position: relative
+    margin: auto

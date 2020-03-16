@@ -52,6 +52,7 @@ $(document).ready(function () {
     pagination: {
       el: '.swiper-pagination',
       type: 'bullets',
+      clickable: true,
     },
     navigation: {
       nextEl: '.swiper-button-next',
@@ -67,4 +68,17 @@ $(document).ready(function () {
   next.css('left', prev.width() + 20 + bullets.width() + 16)
   bullets.css('left', prev.width() + 16)
 
+  let swiper = new Swiper('.swiper-container-steps', {
+    loop: true,
+      pagination: {
+        el: '.swiper-pagination-steps',
+        type: 'fraction',
+        clickable: true,
+        
+      },
+      navigation: {
+        nextEl: '.swiper-button-next',
+        prevEl: '.swiper-button-prev',
+      },
+    });
 });
