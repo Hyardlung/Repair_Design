@@ -20,7 +20,9 @@
   .row
     flex-direction: column
     align-items: center
-  .types,
+  .types
+    padding-top: 6rem
+  .types
   .design-project
     &__card
       margin-bottom: 4.214rem
@@ -29,6 +31,53 @@
   .card
     &__text
       margin-left: 0
+      
+  .control
+    padding: 0.1rem 0 0 0
+    background-color: $dark
+    &__section-title
+      margin-top: 0
+    .video
+      min-height: 17.5rem
+      margin-bottom: 2.4rem
+      &__play
+        width: 5rem
+        height: 5rem
+    &__text
+      margin-bottom: 2.3rem
+      font-size: 1.17rem
+      line-height: 2rem
+      color: $light
+      &::before
+        margin-bottom: 1.3rem
+    &__input-group
+      flex-basis: 100%
+      margin-bottom: 5.1rem
+      &:nth-child(2)
+        margin-bottom: 0
+    &__label
+      font-size: 1.2rem
+      color: $light
+    &__input
+      font-size: 1.5rem
+      line-height: 2rem
+      color: $light
+    &__button
+      max-width: 28.3rem
+      padding: 1.7rem 0
+      margin: auto
+      margin-bottom: -2rem
+      width: 100%
+      font-size: 1.27rem
+      border-radius: 0
+      order: 4
+    &__policy
+      margin-bottom: 5.2rem
+      color: $light
+      order: 1
+      &_label
+        justify-content: flex-start
+        font-size: 1.33rem
   .projects
     padding: 3rem 0
     .section-title
@@ -62,6 +111,7 @@
         line-height: 1.5rem
       img
         margin-top: 2.7rem
+  
   #button-up
     opacity: 0
     visibility: hidden
