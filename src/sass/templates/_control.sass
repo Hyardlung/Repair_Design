@@ -46,13 +46,22 @@
     flex-wrap: wrap
     max-width: 48rem
     margin: auto
+  &__input
+    &::-webkit-input-placeholder
+      color: $dark
+    &::-moz-placeholder
+      color: $dark
+    &::-moz-placeholder
+      color: $dark
+    &::-ms-input-placeholder
+      color: $dark
   &__input-group
     display: flex
     flex-direction: column
     flex-basis: 30%
   &__label
     margin-bottom: -7px
-    color: $dark
+    color: $secondary
   &__button
     padding: 1.13rem 3.781rem
     font-size: 0.92rem

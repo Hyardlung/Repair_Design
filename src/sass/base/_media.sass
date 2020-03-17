@@ -31,7 +31,7 @@
   .card
     &__text
       margin-left: 0
-      
+
   .control
     padding: 0.1rem 0 0 0
     background-color: $dark
@@ -57,11 +57,20 @@
         margin-bottom: 0
     &__label
       font-size: 1.2rem
-      color: $light
+      color: rgba($light, 0.5)
     &__input
       font-size: 1.5rem
       line-height: 2rem
+      border-bottom-color: $light
       color: $light
+      &::-webkit-input-placeholder
+      color: $light
+      &::-moz-placeholder
+        color: $light
+      &::-moz-placeholder
+        color: $light
+      &::-ms-input-placeholder
+        color: $light
     &__button
       max-width: 28.3rem
       padding: 1.7rem 0
