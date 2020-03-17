@@ -28,10 +28,12 @@
   border: none
   border-bottom: 1px solid rgba(54, 54, 54, 0.3)
   font-size: 1.115rem
-  color: $light
+  line-height: 1rem
+  color: $dark
   padding: 0.5rem 0
-  &::placeholder  //починить кроссбраузерность!
-    color: $light
+  &_light
+    &::placeholder  //починить кроссбраузерность!
+      color: $light
 .policy    
   &__checkbox
     opacity: 0

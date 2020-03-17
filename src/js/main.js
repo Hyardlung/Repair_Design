@@ -81,4 +81,7 @@ $(document).ready(function () {
         prevEl: '.swiper-button-prev',
       },
     });
+
+  new WOW().init();
+
 });
