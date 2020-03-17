@@ -88,7 +88,7 @@ $(document).ready(function () {
       animateClass: 'animated', // default
       offset:       0,          // default
       mobile:       false,       // default
-      live:         true        // default
+      live:         true,        // default
     }
     )
   new WOW().init();
