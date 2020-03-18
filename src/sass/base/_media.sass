@@ -127,6 +127,51 @@
   .steps
     display: none
 
+  .footer
+    background: $dark
+    &__title
+      font-size: 1.7rem
+      margin-bottom: 5.214rem
+    &__wrap
+      padding: 0
+      padding-bottom: 7rem
+      background: none
+      transform: translateY(5rem)
+      &::after
+        display: none
+    &__label
+      font-size: 1.2rem
+    &__input
+      font-size: 1.5rem
+      border-bottom-color: $light 
+      &::-webkit-input-placeholder
+        color: $light
+      &::-moz-placeholder
+        color: $light
+      &::-moz-placeholder
+        color: $light
+      &::-ms-input-placeholder
+        color: $light
+      &-group
+        margin-bottom: 5.4rem
+        flex-basis: 100%
+        &_full-width
+          margin-bottom: 6rem
+    &__policy
+      margin-bottom: 0.7rem
+      &_label
+        justify-content: flex-start
+        font-size: 1.33rem
+    &__button
+      max-width: 28.3rem
+      width: 100%
+      padding: 1.7rem 0
+      margin: auto
+      
+      font-size: 1.27rem
+      border-radius: 0
+      
+
   #button-up
     opacity: 0
     visibility: hidden
