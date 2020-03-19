@@ -5,6 +5,17 @@
     &__item
       margin: 0 0.5rem
 
+@media screen and ( max-width: 1040px )
+  .team
+    &__row
+      justify-content: space-between
+    &__col
+      flex-basis: 25%
+    &__card
+      &-icon
+        width: 4rem
+        padding: 0.5rem
+
 @media screen and ( max-width: 992px )
   .nav
     display: none
@@ -141,6 +152,25 @@
   .steps
     display: none
 
+  .design-project
+    max-height: 100%
+
+  .team
+    padding-bottom: 5.428rem
+    background-color: $dark
+    &__section
+      &-title
+        margin-top: 0
+    &__heading
+      margin-top: 0
+      color: $light
+    &__subheading
+      color: $light
+    &__card
+      &-text
+        min-width: 16.642rem
+        margin: 0 auto
+        margin-top: -5rem
   .footer
     background: $dark
     &__title
@@ -262,6 +292,12 @@
       line-height: 1.92rem
     .card__pricetag_wide
       padding: 1rem 4rem
+  .team
+    &__card
+      &-text
+        min-width: 16.642rem
+        margin: 0 auto
+        margin-top: -5rem
 
 
 @media screen and ( max-width: 374px )
