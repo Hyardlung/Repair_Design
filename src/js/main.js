@@ -123,7 +123,73 @@ $(document).ready(function () {
         required: "Обязательно укажите email",
         email: "Укажите в формате: name@domain.com"
       }
-    }  
+    }
+  });
+
+  $('.control__form').validate({
+    errorClass: "invalid",
+    rules: {
+      // правило-объект
+      userNameControl: {
+        required: true,
+        minlength: 2,
+        maxlength: 15
+      },
+      userPhoneControl: "required",
+      // правило-объект
+      userEmail: {
+        required: true,
+        email: true
+      }
+    }, //сообщения
+    messages: {
+      userNameControl: {
+        required: "Имя обязательно",
+        minlength: "Имя не короче двух букв",
+        maxlength: "Имя не длиннее пятнадцати символов"
+      }, 
+      userPhoneControl: {
+        required: "Телефон обязателен",
+      }
+    }
+  });
+
+  $('.footer__form').validate({
+    errorClass: "invalid",
+    rules: {
+      // правило-объект
+      userNameFooter: {
+        required: true,
+        minlength: 2,
+        maxlength: 15
+      },
+      userPhoneFooter: "required",
+      // правило-объект
+      userEmail: {
+        required: true,
+        email: true
+      },
+      userQuestionFooter: {
+        required: true,
+        minlength: 25,
+        maxlength: 300
+      }
+    }, //сообщения
+    messages: {
+      userNameFooter: {
+        required: "Имя обязательно",
+        minlength: "Имя не короче двух букв",
+        maxlength: "Имя не длиннее пятнадцати символов"
+      }, 
+      userPhoneFooter: {
+        required: "Телефон обязателен",
+      },
+      userQuestionFooter: {
+        required: "Напишите ваш вопрос",
+        minlength: "Минимум 25 символов",
+        maxlength: "Не более 150 символов"
+      }
+    }
   });
 
   // Маска для номера телефона

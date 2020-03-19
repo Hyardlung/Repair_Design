@@ -22,6 +22,15 @@
     align-items: center
   .types
     padding-top: 6rem
+    &__heading
+      color: $dark
+
+  .design-project
+    background-color: $dark
+    &__heading
+      color: $light
+    &__subheading
+      color: $light
   .types,
   .design-project
     &__card
@@ -32,7 +41,12 @@
     &__text
       margin-left: 0
     &__pricetag
-      
+  
+  .section
+    &-title
+      &__heading
+        &_dark
+          visibility: hidden
 
   .control
     padding: 0.1rem 0 0 0

@@ -204,12 +204,12 @@
         <form action="#" class="form control__form">
           <div class="control__input-group wow fadeInDown">
             <label for="control-user-name" class="label form__label control__label">Имя</label>
-            <input type="text" class="input form__input control__input" id="control-user-name"
+            <input type="text" name="userNameControl" class="input form__input control__input" id="control-user-name"
               placeholder="Как вас зовут:">
           </div>
           <div class="control__input-group wow fadeInDown">
             <label for="control-user-phone" class="label form__label control__label">Телефон</label>
-            <input type="tel" class="input form__input control__input" id="control-user-phone"
+            <input type="tel" name="userPhoneControl" class="input form__input control__input" id="control-user-phone"
               placeholder="Ваш номер телефона:">
           </div>
           <button class="button button_primary control__button wow fadeIn" data-wow-delay="0.8s">Отправить</button>
@@ -230,7 +230,7 @@
     <section class="section types">
       <div class="container">
         <div class="section-title types__section-title">
-          <h2 class="section-title__heading section-title__heading_dark wow fadeInUp">Виды ремонта</h2>
+          <h2 class="section-title__heading types__heading wow fadeInUp">Виды ремонта</h2>
           <!-- /.section-title__heading -->
           <div class="section-title__img wow fadeIn" data-wow-delay="0.5s">
             <img src="icons/repair.svg" alt="Repair">
@@ -341,13 +341,13 @@
     <section class="section design-project">
       <div class="container">
         <div class="section-title design-project__section-title">
-          <h2 class="section-title__heading section-title__heading_dark wow fadeInUp">Дизайн проект</h2>
+          <h2 class="section-title__heading design-project__heading wow fadeInUp">Дизайн проект</h2>
           <!-- /.section-title__heading -->
           <div class="section-title__img wow fadeIn" data-wow-delay="0.5s">
             <img src="icons/design.svg" alt="Design Project">
           </div>
           <!-- /.section-title__img -->
-          <p class="section-title__subheading section-title__subheading_dark">Дизайн-проект не только помогает сделать
+          <p class="section-title__subheading design-project__subheading">Дизайн-проект не только помогает сделать
             ремонт вашей квартиры более современным, но и значительно удешевляет материалы и сокращает время ремонтных
             работ</p>
           <!-- /.section-title__subheading -->
@@ -589,19 +589,19 @@
         <form action="#" class="form footer__form">
           <div class="input-group footer__input-group">
             <label for="footer__user-name" class="label form__label footer__label label_light">Имя</label>
-            <input type="text" class="input form__input footer__input input_light" id="footer__user-name"
+            <input type="text" name="userNameFooter" class="input form__input footer__input input_light" id="footer__user-name"
               placeholder="Как вас зовут:">
           </div>
           <!-- /.input-group -->
           <div class="input-group footer__input-group">
             <label for="footer__user-phone" class="label form__label footer__label label_light">Телефон</label>
-            <input type="tel" class="input form__input footer__input input_light" id="footer__user-phone"
+            <input type="tel" name="userPhoneFooter" class="input form__input footer__input input_light" id="footer__user-phone"
               placeholder="Ваш номер телефона:">
           </div>
           <!-- /.input-group -->
           <div class="input-group footer__input-group footer__input-group_full-width">
             <label for="footer__user-question" class="label form__label footer__label label_light">Вопрос</label>
-            <input type="text" class="input form__input footer__input input_light" id="footer__user-question"
+            <input type="text" name="userQuestionFooter" class="input form__input footer__input input_light" id="footer__user-question"
               placeholder="Я хочу спросить:">
             <div class="policy footer__policy">
             </div>
