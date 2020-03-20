@@ -10,6 +10,9 @@
   <link rel="stylesheet" href="https://unpkg.com/swiper/css/swiper.min.css">
   <link rel="stylesheet" href="css/animate.css">
   <link rel="stylesheet" href="css/main.min.css">
+  <script src="https://api-maps.yandex.ru/2.1/?apikey=36a0623d-98aa-4309-85a4-9fb148e312e4&lang=en_US"
+    type="text/javascript"></script>
+  <script src="https://kit.fontawesome.com/f9adf10c91.js" crossorigin="anonymous"></script>
 </head>
 
 <body>
@@ -180,162 +183,166 @@
     </section>
     <!--/.projects-->
 
-    <section class="section control">
-      <div class="container">
-        <div class="section-title control__section-title">
-          <h2 class="section-title__heading wow fadeInUp">Онлайн контроль</h2>
-          <!-- /.section-title__heading -->
-          <div class="section-title__img  wow fadeIn" data-wow-delay="0.5s">
-            <img src="icons/camera.svg" alt="Camera icon">
-          </div>
-          <!-- /.section-title__img -->
-        </div>
-        <!-- /.section-title -->
-
-        <div class="control__video video">
-          <img src="icons/play_icon.svg" alt="Play icon" class="video__play">
-        </div>
-        <!-- /.control__video video -->
-        <p class="control__text wow fadeIn" data-wow-delay="0.5s">
-          На каждом объекте установлена ​​камера, которая транслирует ход работы на часах. В любой момент вы можете
-          зайти на наш сайт и следить за ходом работы в вашей квартире. Посмотрите прямую трансляцию с одного из наших
-          объектов! Оставьте заявку ниже чтобы получить ссылку на трансляцию.
-        </p>
-        <form action="#" class="form control__form">
-          <div class="control__input-group wow fadeInDown">
-            <label for="control-user-name" class="label form__label control__label">Имя</label>
-            <input type="text" name="userNameControl" class="input form__input control__input" id="control-user-name"
-              placeholder="Как вас зовут:">
-          </div>
-          <div class="control__input-group wow fadeInDown">
-            <label for="control-user-phone" class="label form__label control__label">Телефон</label>
-            <input type="tel" name="userPhoneControl" class="input form__input control__input" id="control-user-phone"
-              placeholder="Ваш номер телефона:">
-          </div>
-          <button class="button button_primary control__button wow fadeIn" data-wow-delay="0.8s">Отправить</button>
-          <div class="policy control__policy wow fadeInUp" data-wow-delay="1s">
-            <input type="checkbox" name="policy-checkbox" id="control-policy-checkbox" class="policy__checkbox" checked>
-            <label for="control-policy-checkbox" class="policy__label control__policy_label">Я соглашаюсь с обработкой
-              данных</label>
-
-          </div>
-          <!-- /.policy -->
-        </form>
-        <!-- /.form control__form -->
-      </div>
-      <!-- /.container -->
-    </section>
-    <!-- /.section control -->
-
-    <section class="section types">
-      <div class="container">
-        <div class="section-title types__section-title">
-          <h2 class="section-title__heading types__heading wow fadeInUp">Виды ремонта</h2>
-          <!-- /.section-title__heading -->
-          <div class="section-title__img wow fadeIn" data-wow-delay="0.5s">
-            <img src="icons/repair.svg" alt="Repair">
-          </div>
-          <!-- /.section-title__img -->
-        </div>
-        <!-- /.section-title -->
-
-        <div class="row">
-          <div class="col-30">
-            <div class="card types__card wow fadeInUp">
-              <img src="img/types/type-1.jpg" alt="" class="card__img">
-              <div class="card__text wow fadeIn" data-wow-delay="1s">
-                <h3 class="card__title">Косметический ремонт</h3>
-                <!-- /.card__title -->
-                <ul class="card__list">
-                  <li class="card__item wow lightSpeedIn" data-wow-delay="1s">Демонтаж старых покрытий</li>
-                  <!-- /.card__item -->
-                  <li class="card__item wow lightSpeedIn" data-wow-delay="1.1s">Поклейка обоев</li>
-                  <!-- /.card__item -->
-                  <li class="card__item wow lightSpeedIn" data-wow-delay="1.2s">Роспись стен и потолков</li>
-                  <!-- /.card__item -->
-                  <li class="card__item wow lightSpeedIn" data-wow-delay="1.3s">Укладка полов</li>
-                  <!-- /.card__item -->
-                  <li class="card__item wow lightSpeedIn" data-wow-delay="1.4s">Замена сантехники</li>
-                  <!-- /.card__item -->
-                  <li class="card__item wow lightSpeedIn" data-wow-delay="1.5s">Замена розеток и выключателей</li>
-                  <!-- /.card__item -->
-                  <li class="card__item wow lightSpeedIn" data-wow-delay="1.6s">Замена дверей</li>
-                  <!-- /.card__item -->
-                </ul>
-                <!-- /.card__list -->
-                <div class="card__pricetag">от 900 руб / м<sup>2</sup></div>
-              </div>
-              <!-- /.card__text -->
+    <div class="section_light">
+      <section class="section control">
+        <div class="container">
+          <div class="section-title control__section-title">
+            <h2 class="section-title__heading control__heading wow fadeInUp">Онлайн контроль</h2>
+            <!-- /.section-title__heading -->
+            <div class="section-title__img  wow fadeIn" data-wow-delay="0.5s">
+              <img src="icons/camera.svg" alt="Camera icon">
             </div>
-            <!-- /.card -->
+            <!-- /.section-title__img -->
           </div>
-          <!-- /.col -->
-          <div class="col-30">
-            <div class="card types__card wow fadeInUp" data-wow-delay="0.2s">
-              <img src="img/types/type-2.jpg" alt="" class="card__img">
-              <div class="card__text wow fadeIn" data-wow-delay="1s">
-                <h3 class="card__title">Капитальный ремонт</h3>
-                <!-- /.card__title -->
-                <ul class="card__list">
-                  <li class="card__item wow lightSpeedIn" data-wow-delay="1.3s">Демонтаж старых покрытий</li>
-                  <!-- /.card__item -->
-                  <li class="card__item wow lightSpeedIn" data-wow-delay="1.4s">Поклейка обоев</li>
-                  <!-- /.card__item -->
-                  <li class="card__item wow lightSpeedIn" data-wow-delay="1.5s">Роспись стен и потолков</li>
-                  <!-- /.card__item -->
-                  <li class="card__item wow lightSpeedIn" data-wow-delay="1.6s">Укладка полов</li>
-                  <!-- /.card__item -->
-                  <li class="card__item wow lightSpeedIn" data-wow-delay="1.7s">Замена сантехники</li>
-                  <!-- /.card__item -->
-                  <li class="card__item wow lightSpeedIn" data-wow-delay="1.8s">Замена розеток и выключателей</li>
-                  <!-- /.card__item -->
-                  <li class="card__item wow lightSpeedIn" data-wow-delay="1.9s">Замена дверей</li>
-                  <!-- /.card__item -->
-                </ul>
-                <!-- /.card__list -->
-                <div class="card__pricetag">от 1800 руб / м<sup>2</sup></div>
-              </div>
-              <!-- /.card__text -->
+          <!-- /.section-title -->
+
+          <div class="control__video video">
+            <img src="icons/play_icon.svg" alt="Play icon" class="video__play">
+          </div>
+          <!-- /.control__video video -->
+          <p class="control__text wow fadeIn" data-wow-delay="0.5s">
+            На каждом объекте установлена ​​камера, которая транслирует ход работы на часах. В любой момент вы можете
+            зайти на наш сайт и следить за ходом работы в вашей квартире. Посмотрите прямую трансляцию с одного из наших
+            объектов! Оставьте заявку ниже чтобы получить ссылку на трансляцию.
+          </p>
+          <form action="#" class="form control__form">
+            <div class="control__input-group wow fadeInDown">
+              <label for="control-user-name" class="label form__label control__label">Имя</label>
+              <input type="text" name="userNameControl" class="input form__input control__input" id="control-user-name"
+                placeholder="Как вас зовут:">
             </div>
-            <!-- /.card -->
-          </div>
-          <!-- /.col -->
-          <div class="col-30">
-            <div class="card types__card wow fadeInUp" data-wow-delay="0.4s">
-              <img src="img/types/type-3.jpg" alt="" class="card__img">
-              <div class="card__text wow fadeIn" data-wow-delay="1s">
-                <h3 class="card__title">Дизайнерский ремонт</h3>
-                <!-- /.card__title -->
-                <ul class="card__list">
-                  <li class="card__item wow lightSpeedIn" data-wow-delay="1.6s">Демонтаж старых покрытий</li>
-                  <!-- /.card__item -->
-                  <li class="card__item wow lightSpeedIn" data-wow-delay="1.7s">Поклейка обоев</li>
-                  <!-- /.card__item -->
-                  <li class="card__item wow lightSpeedIn" data-wow-delay="1.8s">Роспись стен и потолков</li>
-                  <!-- /.card__item -->
-                  <li class="card__item wow lightSpeedIn" data-wow-delay="1.9s">Укладка полов</li>
-                  <!-- /.card__item -->
-                  <li class="card__item wow lightSpeedIn" data-wow-delay="2s">Замена сантехники</li>
-                  <!-- /.card__item -->
-                  <li class="card__item wow lightSpeedIn" data-wow-delay="2.1s">Замена розеток и выключателей</li>
-                  <!-- /.card__item -->
-                  <li class="card__item wow lightSpeedIn" data-wow-delay="2.2s">Замена дверей</li>
-                  <!-- /.card__item -->
-                </ul>
-                <!-- /.card__list -->
-                <div class="card__pricetag">от 4000 руб / м<sup>2</sup></div>
-              </div>
-              <!-- /.card__text -->
+            <div class="control__input-group wow fadeInDown">
+              <label for="control-user-phone" class="label form__label control__label">Телефон</label>
+              <input type="tel" name="userPhoneControl" class="input form__input control__input" id="control-user-phone"
+                placeholder="Ваш номер телефона:">
             </div>
-            <!-- /.card -->
-          </div>
-          <!-- /.col -->
+            <button class="button button_primary control__button wow fadeIn" data-wow-delay="0.8s">Отправить</button>
+            <div class="policy control__policy wow fadeInUp" data-wow-delay="1s">
+              <input type="checkbox" name="policy-checkbox" id="control-policy-checkbox" class="policy__checkbox"
+                checked>
+              <label for="control-policy-checkbox" class="policy__label control__policy_label">Я соглашаюсь с обработкой
+                данных</label>
+
+            </div>
+            <!-- /.policy -->
+          </form>
+          <!-- /.form control__form -->
         </div>
-        <!-- /.row -->
-      </div>
-      <!-- /.container -->
-    </section>
-    <!-- /.section types -->
+        <!-- /.container -->
+      </section>
+      <!-- /.section control -->
+
+      <section class="section types">
+        <div class="container">
+          <div class="section-title types__section-title">
+            <h2 class="section-title__heading types__heading wow fadeInUp">Виды ремонта</h2>
+            <!-- /.section-title__heading -->
+            <div class="section-title__img wow fadeIn" data-wow-delay="0.5s">
+              <img src="icons/repair.svg" alt="Repair">
+            </div>
+            <!-- /.section-title__img -->
+          </div>
+          <!-- /.section-title -->
+
+          <div class="row">
+            <div class="col-30">
+              <div class="card types__card wow fadeInUp">
+                <img src="img/types/type-1.jpg" alt="" class="card__img">
+                <div class="card__text wow fadeIn" data-wow-delay="1s">
+                  <h3 class="card__title">Косметический ремонт</h3>
+                  <!-- /.card__title -->
+                  <ul class="card__list">
+                    <li class="card__item wow lightSpeedIn" data-wow-delay="1s">Демонтаж старых покрытий</li>
+                    <!-- /.card__item -->
+                    <li class="card__item wow lightSpeedIn" data-wow-delay="1.1s">Поклейка обоев</li>
+                    <!-- /.card__item -->
+                    <li class="card__item wow lightSpeedIn" data-wow-delay="1.2s">Роспись стен и потолков</li>
+                    <!-- /.card__item -->
+                    <li class="card__item wow lightSpeedIn" data-wow-delay="1.3s">Укладка полов</li>
+                    <!-- /.card__item -->
+                    <li class="card__item wow lightSpeedIn" data-wow-delay="1.4s">Замена сантехники</li>
+                    <!-- /.card__item -->
+                    <li class="card__item wow lightSpeedIn" data-wow-delay="1.5s">Замена розеток и выключателей</li>
+                    <!-- /.card__item -->
+                    <li class="card__item wow lightSpeedIn" data-wow-delay="1.6s">Замена дверей</li>
+                    <!-- /.card__item -->
+                  </ul>
+                  <!-- /.card__list -->
+                  <div class="card__pricetag">от 900 руб / м<sup>2</sup></div>
+                </div>
+                <!-- /.card__text -->
+              </div>
+              <!-- /.card -->
+            </div>
+            <!-- /.col -->
+            <div class="col-30">
+              <div class="card types__card wow fadeInUp" data-wow-delay="0.2s">
+                <img src="img/types/type-2.jpg" alt="" class="card__img">
+                <div class="card__text wow fadeIn" data-wow-delay="1s">
+                  <h3 class="card__title">Капитальный ремонт</h3>
+                  <!-- /.card__title -->
+                  <ul class="card__list">
+                    <li class="card__item wow lightSpeedIn" data-wow-delay="1.3s">Демонтаж старых покрытий</li>
+                    <!-- /.card__item -->
+                    <li class="card__item wow lightSpeedIn" data-wow-delay="1.4s">Поклейка обоев</li>
+                    <!-- /.card__item -->
+                    <li class="card__item wow lightSpeedIn" data-wow-delay="1.5s">Роспись стен и потолков</li>
+                    <!-- /.card__item -->
+                    <li class="card__item wow lightSpeedIn" data-wow-delay="1.6s">Укладка полов</li>
+                    <!-- /.card__item -->
+                    <li class="card__item wow lightSpeedIn" data-wow-delay="1.7s">Замена сантехники</li>
+                    <!-- /.card__item -->
+                    <li class="card__item wow lightSpeedIn" data-wow-delay="1.8s">Замена розеток и выключателей</li>
+                    <!-- /.card__item -->
+                    <li class="card__item wow lightSpeedIn" data-wow-delay="1.9s">Замена дверей</li>
+                    <!-- /.card__item -->
+                  </ul>
+                  <!-- /.card__list -->
+                  <div class="card__pricetag">от 1800 руб / м<sup>2</sup></div>
+                </div>
+                <!-- /.card__text -->
+              </div>
+              <!-- /.card -->
+            </div>
+            <!-- /.col -->
+            <div class="col-30">
+              <div class="card types__card wow fadeInUp" data-wow-delay="0.4s">
+                <img src="img/types/type-3.jpg" alt="" class="card__img">
+                <div class="card__text wow fadeIn" data-wow-delay="1s">
+                  <h3 class="card__title">Дизайнерский ремонт</h3>
+                  <!-- /.card__title -->
+                  <ul class="card__list">
+                    <li class="card__item wow lightSpeedIn" data-wow-delay="1.6s">Демонтаж старых покрытий</li>
+                    <!-- /.card__item -->
+                    <li class="card__item wow lightSpeedIn" data-wow-delay="1.7s">Поклейка обоев</li>
+                    <!-- /.card__item -->
+                    <li class="card__item wow lightSpeedIn" data-wow-delay="1.8s">Роспись стен и потолков</li>
+                    <!-- /.card__item -->
+                    <li class="card__item wow lightSpeedIn" data-wow-delay="1.9s">Укладка полов</li>
+                    <!-- /.card__item -->
+                    <li class="card__item wow lightSpeedIn" data-wow-delay="2s">Замена сантехники</li>
+                    <!-- /.card__item -->
+                    <li class="card__item wow lightSpeedIn" data-wow-delay="2.1s">Замена розеток и выключателей</li>
+                    <!-- /.card__item -->
+                    <li class="card__item wow lightSpeedIn" data-wow-delay="2.2s">Замена дверей</li>
+                    <!-- /.card__item -->
+                  </ul>
+                  <!-- /.card__list -->
+                  <div class="card__pricetag">от 4000 руб / м<sup>2</sup></div>
+                </div>
+                <!-- /.card__text -->
+              </div>
+              <!-- /.card -->
+            </div>
+            <!-- /.col -->
+          </div>
+          <!-- /.row -->
+        </div>
+        <!-- /.container -->
+      </section>
+      <!-- /.section types -->
+    </div>
+    <!-- /.light-bg-wrap -->
 
 
     <section class="section design-project">
@@ -589,7 +596,8 @@
             <img src="icons/team/team_main.svg" alt="Our team">
           </div>
           <!-- /.section-title__img -->
-          <p class="section-title__subheading team__subheading">Наша команда помогла стать счастливее более чем 500 семьям, и мы не собираемся останавливаться</p>
+          <p class="section-title__subheading team__subheading">Наша команда помогла стать счастливее более чем 500
+            семьям, и мы не собираемся останавливаться</p>
           <!-- /.section-title__subheading -->
         </div>
         <!-- /.section-title -->
@@ -598,7 +606,7 @@
           <div class="col team__col">
             <div class="card team__card">
               <img src="icons/team/member_1.svg" alt="Member 1" class="card__icon team__card-icon">
-              <img src="img/team/image_1.jpg" alt="" class="card__img">
+              <img src="img/team/image_1.jpg" alt="" class="card__img team__card-img">
               <div class="card__text team__card-text">
                 <h3 class="card__title team__card-title">Алексей Колмаков</h3>
                 <span class="card__subtitle team__card-subtitle">Проектный менеджер</span>
@@ -613,7 +621,7 @@
           <div class="col team__col">
             <div class="card team__card">
               <img src="../icons/team/member_2.svg" alt="Member 2" class="card__icon team__card-icon">
-              <img src="img/team/image_2.jpg" alt="" class="card__img">
+              <img src="img/team/image_2.jpg" alt="" class="card__img team__card-img">
               <div class="card__text team__card-text">
                 <h3 class="card__title team__card-title">Алиса Сухорукова</h3>
                 <span class="card__subtitle team__card-subtitle">Дизайнер</span>
@@ -628,7 +636,7 @@
           <div class="col team__col">
             <div class="card team__card">
               <img src="../icons/team/member_3.svg" alt="Member 3" class="card__icon team__card-icon">
-              <img src="img/team/image_3.jpg" alt="" class="card__img">
+              <img src="img/team/image_3.jpg" alt="" class="card__img team__card-img">
               <div class="card__text team__card-text">
                 <h3 class="card__title team__card-title">Давид Волынев</h3>
                 <span class="card__subtitle team__card-subtitle">Бригадир</span>
@@ -644,7 +652,8 @@
         <!-- /.row -->
 
         <div class="team__about">
-          Каждый сотрудник нашей компании является квалифицированным штатным специалистом с опытом работы от 6 лет. У нас нет  гастарбайтеров, каждый сотрудник выполняет работу, соответствующую его специальности.
+          Каждый сотрудник нашей компании является квалифицированным штатным специалистом с опытом работы от 6 лет. У
+          нас нет гастарбайтеров, каждый сотрудник выполняет работу, соответствующую его специальности.
         </div>
         <!-- /.team__about -->
       </div>
@@ -662,20 +671,20 @@
         <form action="#" class="form footer__form">
           <div class="input-group footer__input-group">
             <label for="footer__user-name" class="label form__label footer__label label_light">Имя</label>
-            <input type="text" name="userNameFooter" class="input form__input footer__input input_light" id="footer__user-name"
-              placeholder="Как вас зовут:">
+            <input type="text" name="userNameFooter" class="input form__input footer__input input_light"
+              id="footer__user-name" placeholder="Как вас зовут:">
           </div>
           <!-- /.input-group -->
           <div class="input-group footer__input-group">
             <label for="footer__user-phone" class="label form__label footer__label label_light">Телефон</label>
-            <input type="tel" name="userPhoneFooter" class="input form__input footer__input input_light" id="footer__user-phone"
-              placeholder="Ваш номер телефона:">
+            <input type="tel" name="userPhoneFooter" class="input form__input footer__input input_light"
+              id="footer__user-phone" placeholder="Ваш номер телефона:">
           </div>
           <!-- /.input-group -->
           <div class="input-group footer__input-group footer__input-group_full-width">
             <label for="footer__user-question" class="label form__label footer__label label_light">Вопрос</label>
-            <input type="text" name="userQuestionFooter" class="input form__input footer__input input_light" id="footer__user-question"
-              placeholder="Я хочу спросить:">
+            <input type="text" name="userQuestionFooter" class="input form__input footer__input input_light"
+              id="footer__user-question" placeholder="Я хочу спросить:">
             <div class="policy footer__policy">
             </div>
             <!-- /.input-group -->
@@ -690,6 +699,19 @@
         <!-- /.form footer__form -->
       </div>
       <!-- /.footer-wrap -->
+      <div class="section-title__heading_primary footer-contacts__title">Ростов на Дону, Торговый центр Plaza
+        Прямой телефон +7 (999) 768 32 99</div>
+      <!-- /.footer-contacts__title -->
+      <div class="footer-contacts__links">
+        <i class="far fa-envelope footer-contacts__link"></i>
+        <i class="fab fa-instagram footer-contacts__link"></i>
+      </div>
+      <!-- /.footer-contacts__links -->
+      <div class="footer__map_wrap">
+        <div class="map footer__map" id="map"></div>
+      </div>
+      <!-- /.map footer__map -->
+
     </div>
     <!-- /.container -->
     <div class="footer__menu">

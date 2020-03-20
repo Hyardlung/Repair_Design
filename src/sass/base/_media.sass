@@ -5,7 +5,6 @@
     &__item
       margin: 0 0.5rem
 
-@media screen and ( max-width: 1040px )
   .team
     &__row
       justify-content: space-between
@@ -15,6 +14,7 @@
       &-icon
         width: 4rem
         padding: 0.5rem
+        transform: translate(-10rem, 2.1rem)
 
 @media screen and ( max-width: 992px )
   .nav
@@ -25,20 +25,40 @@
     &__content
       margin-left: 0px
 
+@media screen and ( max-width: 1000px )
+  .team
+    &__card
+        &-icon
+          transform: translate(-8rem, 2.1rem)
+
 @media screen and ( max-width: 760px )
   body
     background-image: none
+  .section
+    &_dark
+      background-color: $black
+      &::after
+        display: none
+    &-title
+      &__heading
+        &_dark
+          visibility: hidden
+  .header
+    background-color: $black
   .row
     flex-direction: column
     align-items: center
   .types
     padding-top: 6rem
     &__heading
+      font-size: 1.8rem
       color: $dark
-
+  .hero
+    &__scroll-down
+      background-color: $black
   .design-project
-    background-color: $dark
     &__heading
+      font-size: 1.8rem
       color: $light
     &__subheading
       color: $light
@@ -52,18 +72,14 @@
     &__text
       margin-left: 0
     &__pricetag
-  
-  .section
-    &-title
-      &__heading
-        &_dark
-          visibility: hidden
 
   .control
     padding: 0.1rem 0 0 0
-    background-color: $dark
+    background-color: $black
     &__section-title
       margin-top: 0
+    &__heading
+      font-size: 1.8rem
     .video
       min-height: 17.5rem
       margin-bottom: 2.4rem
@@ -133,6 +149,7 @@
         margin-bottom: 2rem
         font-size: 1.165rem
         line-height: 1.85rem
+
   .swiper
     &-slide
       &__text
@@ -154,25 +171,51 @@
 
   .design-project
     max-height: 100%
+    background-color: $black
 
   .team
-    padding-bottom: 5.428rem
-    background-color: $dark
+    padding-bottom: 0
+    background-color: $black
     &__section
       &-title
         margin-top: 0
     &__heading
       margin-top: 0
+      margin-bottom: 0.7rem
+      font-size: 1.8rem
       color: $light
     &__subheading
+      max-width: 80%
       color: $light
     &__card
+      margin-bottom: 2rem
+      &-icon
+        width: 6em
+        padding: 1.05rem
+        transform: translate(-12.6rem,2.7rem)
+      &-img
+        max-width: 22rem
       &-text
-        min-width: 16.642rem
+        max-width: 19.542rem
+        padding-top: 3rem
         margin: 0 auto
-        margin-top: -5rem
+        margin-top: -7.5rem
+      &-title
+        margin-bottom: 0.5rem
+        font-size: 1.46rem
+      &-subtitle
+        margin-bottom: 1.8rem
+        font-size: 1.5rem
+      &-exp
+        padding: 1.15rem 0
+        font-size: 1.1rem
+    &__about
+      display: none
+
   .footer
-    background: $dark
+    display: flex
+    height: 100%
+    background: $black
     &__title
       font-size: 1.7rem
       margin-bottom: 5.214rem
@@ -211,9 +254,11 @@
       width: 100%
       padding: 1.7rem 0
       margin: auto
-      
       font-size: 1.27rem
       border-radius: 0
+    
+    &__menu
+      display: none
       
 
   #button-up
@@ -295,10 +340,16 @@
   .team
     &__card
       &-text
-        min-width: 16.642rem
+        max-width: 16.642rem
+        padding: 0
+        padding-top: 1rem
         margin: 0 auto
         margin-top: -5rem
 
+@media screen and ( max-height: 500px )
+  .hero
+    &__scroll-down
+      display: none
 
 @media screen and ( max-width: 374px )
   .hero
@@ -311,7 +362,3 @@
       width: 100%
       font-size: 1rem
 
-@media screen and ( max-height: 500px )
-  .hero
-    &__scroll-down
-      display: none

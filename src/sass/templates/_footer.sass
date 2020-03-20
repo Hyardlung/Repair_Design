@@ -11,11 +11,13 @@
     text-align: center
     text-transform: uppercase
   &__wrap
+    position: relative
     max-width: 55rem
     padding: 2.5rem
     margin: 0 auto
     background: $black 
     transform: translateY(-14rem)
+    z-index: 1
     &::after 
       content: ''
       background: url(../img/lines_bg.png) center/105% no-repeat
@@ -56,3 +58,26 @@
   &__menu
     padding: 1.5rem 0
     background-color: $dark
+  &__map
+    max-width: 60rem
+    min-height: 28rem
+    margin: 0 auto
+    margin-bottom: 4.714rem
+  &-contacts
+    &__title
+      max-width: 34rem
+      margin: -11.3rem auto 1.2rem auto
+      font-family: 'Yeseva One', cursive
+      font-size: 1.25rem
+      color: rgba($primary, 0.7)
+      text-transform: uppercase
+      text-align: center
+    &__links
+      display: flex
+      justify-content: center
+      margin-bottom: 2.7rem
+    &__link
+      padding: 0.45rem
+      margin: 0 0.4rem
+      border-radius: 50%
+      background-color: rgba($primary, 0.7)

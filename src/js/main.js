@@ -136,11 +136,6 @@ $(document).ready(function () {
         maxlength: 15
       },
       userPhoneControl: "required",
-      // правило-объект
-      userEmail: {
-        required: true,
-        email: true
-      }
     }, //сообщения
     messages: {
       userNameControl: {
@@ -164,11 +159,6 @@ $(document).ready(function () {
         maxlength: 15
       },
       userPhoneFooter: "required",
-      // правило-объект
-      userEmail: {
-        required: true,
-        email: true
-      },
       userQuestionFooter: {
         required: true,
         minlength: 25,
@@ -182,7 +172,7 @@ $(document).ready(function () {
         maxlength: "Имя не длиннее пятнадцати символов"
       }, 
       userPhoneFooter: {
-        required: "Телефон обязателен",
+        required: "Телефон обязателен"
       },
       userQuestionFooter: {
         required: "Напишите ваш вопрос",
@@ -193,6 +183,43 @@ $(document).ready(function () {
   });
 
   // Маска для номера телефона
-  $('[type=tel]').mask('+7 (000) 000-00-00', {placeholder: "+7 (___) ___-__-__"});
+  $('[type=tel]').mask('+7 (000) 000-00-00', {placeholder: "Ваш номер телефона:"});
+
+  ymaps.ready(function () {
+    var myMap = new ymaps.Map('map', {
+            center: [55.786786, 49.142331],
+            zoom: 9
+        }, {
+            searchControlProvider: 'yandex#search'
+        }),
+
+        // Creating a content layout.
+        MyIconContentLayout = ymaps.templateLayoutFactory.createClass(
+            '<div style="color: #FFFFFF; font-weight: bold;">$[properties.iconContent]</div>'
+        ),
+
+        myPlacemark = new ymaps.Placemark(myMap.getCenter(), {
+            hintContent: 'Наш офис',
+            balloonContent: 'Вход со двора'
+        }, {
+            /**
+             * Options.
+             * You must specify this type of layout.
+             */
+            iconLayout: 'default#image',
+            // Custom image for the placemark icon.
+            iconImageHref: 'icons/marker.png',
+            // The size of the placemark.
+            iconImageSize: [32, 32],
+            /**
+             * The offset of the upper left corner of the icon relative
+             * to its "tail" (the anchor point).
+             */
+            iconImageOffset: [-5, -38]
+        });
+
+    myMap.geoObjects
+        .add(myPlacemark);
+  });
 
 });

@@ -11,6 +11,29 @@ img
 .section
   &_dark
     background-color: $dark
+    &::after
+      content: ''
+      background: url('../img/lines_bg.png') center/cover no-repeat
+      opacity: .3
+      top: 0
+      left: 0
+      bottom: 0
+      right: 0
+      position: absolute
+  &_light
+    background-color: $light
+    &::after
+      content: ''
+      background: url('../img/lines_bg_light.png') center/102% no-repeat
+      opacity: .5
+      top: 0
+      left: 0
+      bottom: 0
+      right: 0
+      position: absolute
+    
+
+
   &-title
     text-align: center
     text-transform: uppercase
