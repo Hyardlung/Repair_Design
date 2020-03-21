@@ -16,6 +16,11 @@
         padding: 0.5rem
         transform: translate(-10rem, 2.1rem)
 
+  .footer
+    &__map
+      &_wrap
+        min-height: 20rem
+
 @media screen and ( max-width: 992px )
   .nav
     display: none
@@ -213,7 +218,6 @@
       display: none
 
   .footer
-    display: flex
     height: 100%
     background: $black
     &__title
@@ -221,9 +225,8 @@
       margin-bottom: 5.214rem
     &__wrap
       padding: 0
-      padding-bottom: 7rem
+      margin: 20rem 0 5rem 0
       background: none
-      transform: translateY(5rem)
       &::after
         display: none
     &__label
@@ -256,7 +259,30 @@
       margin: auto
       font-size: 1.27rem
       border-radius: 0
-    
+    &__map
+      &_wrap
+        min-height: 18rem
+        margin-top: -15rem
+        order: 1
+    &-contacts
+      &__title
+        max-width: 28rem
+        margin-top: 0
+        margin-bottom: 1.5rem
+        font-size: 1.5rem
+        order: 2
+      &__phone
+        font-size: 1.5rem
+        
+      &__links
+        order: 3
+      &__link
+        width: 40px
+        height: 40px
+        margin: 0 11px
+        &_mail,
+        &_instagram
+          background-size: 22px
     &__menu
       display: none
       
@@ -265,6 +291,11 @@
     opacity: 0
     visibility: hidden
 
+@media screen and ( max-width: 640px )
+  .footer
+    &__map
+      &_wrap
+        min-height: 11rem
 @media screen and ( max-width: 576px )
   .section
     &-title

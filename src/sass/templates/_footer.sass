@@ -1,5 +1,8 @@
 .footer
-  background: rgba($dark, 0.8) url('../img/footer_bg.png') center / cover no-repeat
+  background: $dark url('../img/footer_bg.png') center / cover no-repeat
+  .container
+    display: flex
+    flex-direction: column 
   &__title
     margin-bottom: 3.214rem
     margin-top: 0
@@ -55,14 +58,15 @@
     margin: 0 auto
     padding: 1.1rem 3.8rem
     font-size: 0.9rem
-  &__menu
-    padding: 1.5rem 0
-    background-color: $dark
   &__map
-    max-width: 60rem
+    &_wrap
+    max-width: 58rem
     min-height: 28rem
+    width: 100%
+    height: 100%
     margin: 0 auto
-    margin-bottom: 4.714rem
+    margin-bottom: 4.4rem
+  
   &-contacts
     &__title
       max-width: 34rem
@@ -72,12 +76,28 @@
       color: rgba($primary, 0.7)
       text-transform: uppercase
       text-align: center
+    &__phone
+      font-family: 'Yeseva One', cursive
+      font-size: 1.25rem
+      color: rgba($primary, 0.7)
+      text-transform: uppercase
+      text-decoration: none
     &__links
       display: flex
       justify-content: center
       margin-bottom: 2.7rem
     &__link
-      padding: 0.45rem
-      margin: 0 0.4rem
+      display: block
+      width: 30px
+      height: 30px
       border-radius: 50%
-      background-color: rgba($primary, 0.7)
+      margin: 0 7px
+      text-decoration: none
+      &_mail
+        background: rgba($primary, 0.7) url('../icons/footer/mail.svg') center center no-repeat
+      &_instagram
+        background: rgba($primary, 0.7) url('../icons/footer/instagram.svg') center center no-repeat
+  &__menu
+    padding: 1.5rem 0
+    background-color: $dark
+  
