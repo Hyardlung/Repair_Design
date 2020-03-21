@@ -109,7 +109,9 @@ $(document).ready(function () {
         required: true,
         email: true
       }
-    }, //сообщения
+    }, 
+    errorElement: "div",
+    //сообщения
     messages: {
       userName: {
         required: "Имя обязательно",
@@ -136,7 +138,9 @@ $(document).ready(function () {
         maxlength: 15
       },
       userPhoneControl: "required",
-    }, //сообщения
+    }, 
+    errorElement: "div",
+    //сообщения
     messages: {
       userNameControl: {
         required: "Имя обязательно",
@@ -164,7 +168,9 @@ $(document).ready(function () {
         minlength: 25,
         maxlength: 300
       }
-    }, //сообщения
+    }, 
+    errorElement: "div",
+    //сообщения
     messages: {
       userNameFooter: {
         required: "Имя обязательно",
