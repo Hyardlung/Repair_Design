@@ -18,8 +18,13 @@
 
   .footer
     &__map
-      &_wrap
-        min-height: 20rem
+      height: 25rem
+
+@media screen and ( max-width: 1000px )
+  .team
+    &__card
+        &-icon
+          transform: translate(-8rem, 2.1rem)
 
 @media screen and ( max-width: 992px )
   .nav
@@ -29,12 +34,6 @@
       display: none
     &__content
       margin-left: 0px
-
-@media screen and ( max-width: 1000px )
-  .team
-    &__card
-        &-icon
-          transform: translate(-8rem, 2.1rem)
 
 @media screen and ( max-width: 760px )
   body
@@ -261,10 +260,9 @@
       font-size: 1.27rem
       border-radius: 0
     &__map
-      &_wrap
-        min-height: 18rem
-        margin-top: -15rem
-        order: 1
+      height: 25rem
+      margin-top: -15rem
+      order: 1
     &-contacts
       &__title
         max-width: 28rem
@@ -381,12 +379,17 @@
         margin: 0 auto
         margin-top: -5rem
 
+  .footer
+    #map
+      height: 21rem
+  
+
 @media screen and ( max-height: 500px )
   .hero
     &__scroll-down
       display: none
 
-@media screen and ( max-width: 374px )
+@media screen and ( max-width: 375px )
   .hero
     &__content
       max-width: 360px
@@ -406,7 +409,7 @@
         background-color: $primary
         box-shadow: 0px 5px 20px rgba(227, 184, 115, 0.5)
 
+@media screen and ( max-width: 374px )
   .footer
-    &__map
-      &_wrap
-        height: 8rem
+    #map
+      height: 14rem

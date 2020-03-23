@@ -221,8 +221,7 @@ $(document).ready(function () {
              * The offset of the upper left corner of the icon relative
              * to its "tail" (the anchor point).
              */
-            iconImageOffset: [-5, -38],
-            autoFitToViewport: 'always'
+            iconImageOffset: [-5, -38]
         });
 
     myMap.geoObjects
