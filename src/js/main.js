@@ -194,7 +194,7 @@ $(document).ready(function () {
   ymaps.ready(function () {
     var myMap = new ymaps.Map('map', {
             center: [55.786786, 49.142331],
-            zoom: 9
+            zoom: 16
         }, {
             searchControlProvider: 'yandex#search'
         }),
