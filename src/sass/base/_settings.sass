@@ -22,15 +22,19 @@ img
       position: absolute
   &_light
     background-color: $light
+    // TODO: починить фоновые линии! Нужно реализовать как в section_dark, через псевдоэлемент, иначе свойсво opacity делает прозрачным и контент тоже
+    // background: url('../img/lines_bg_light.png') center/102% no-repeat
+    // opacity: .5
     &::after
       content: ''
       background: url('../img/lines_bg_light.png') center/102% no-repeat
       opacity: .5
+      position: absolute
       top: 0
       left: 0
       bottom: 0
       right: 0
-      position: absolute
+      
 
   &-title
     text-align: center
